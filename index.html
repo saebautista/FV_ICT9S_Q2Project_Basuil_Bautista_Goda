@@ -21,38 +21,82 @@
             align-items: center;
             height: 100vh;
         }
+
+                .navbar-brand {
+            color: #17365d;
+            font-weight: bold;
+        }
+
+        .navbar {
+            min-height: 82px;
+            z-index: 1030;
+        }
+
+        .navbar-brand img {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+        .navbar-nav .nav-link {
+            color: #17365d;
+            font-weight: 600;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
+    <header id="home">
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fPjyNg5xFEOtT5wBIhcsb3H__yQMgGnnE6Y-yCOr6VzFjiJQctV9dWo&s=10" alt="obmc_logo" class="img-fluid rounded-circle" style="height: 86px; width:87px;"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Enroll</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-info" type="button" style="border-radius: 10%; width: 50%;">My portal</button>
-      </form>
-    </div>
-  </div>
-</nav>   
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center gap-2 fs-5" href="#home">
+
+                    <img src="https://findschools.ph/wp-content/uploads/2026/03/OBMCLOGO2024-04-1.webp"
+                        alt="O.B. Montessori Center Logo">
+
+                    <span>O.B. MONTESSORI CENTER</span>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavigation" aria-controls="mainNavigation"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#about">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#requirements">Requirements</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#enroll">Enrollment</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="btn btn-primary rounded-1 px-3" href="https://obmontessori.orangeapps.ph/" target="_blank">
+                                School Portal
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
 <br>
 
 <div class="container-fluid m-0 p-0" style="background-color: white;">
